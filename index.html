@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Shapes Drawing</title>
+</head>
+<body>
+    <div class="canvas__container">
+        <canvas id="canvas1"></canvas>
+    </div>
+
+    <div class="configurator">
+        <div class="configurator__container">
+            <div data-name="Particle" class="configurator__item">
+                <label>
+                    <span>Translate X</span>
+                    <input type="text" value="0" data-setting="x" class="configurator__input">
+                </label>
+                <label>
+                    <span>Translate Y</span>
+                    <input type="text" value="0" data-setting="y" class="configurator__input">
+                </label>
+                <label>
+                    <span>Line Width</span>
+                    <input type="text" value="2" data-setting="lineWidth" class="configurator__input">
+                </label>
+                <label>
+                    <span>Radius of Particle</span>
+                    <input type="text" value="50" data-setting="radius" class="configurator__input">
+                </label>
+                <label>
+                    <span>Inset</span>
+                    <input type="text" value="0.5" data-setting="inset" class="configurator__input">
+                </label>
+                <label>
+                    <span>Number of Sights</span>
+                    <input type="text" value="5" data-setting="n" class="configurator__input">
+                </label>
+                <label>
+                    <span>Stroke Color</span>
+                    <input type="color" value="#ff0000" data-setting="strokeColor" class="configurator__input">
+                </label>
+                <label>
+                    <span>Fill Color</span>
+                    <input type="color" value="#ff0000" data-setting="fillColor" class="configurator__input">
+                </label>
+                <label>
+                    <span>Shadow Color</span>
+                    <input type="color" value="#000000" data-setting="shadowColor" class="configurator__input">
+                </label>
+                <label>
+                    <span>Shadow Blur</span>
+                    <input type="text" value="5" data-setting="shadowBlur" class="configurator__input">
+                </label>
+            </div>
+        </div>
+        <button type="button" class="add-button">Add</button>      
+    </div>
+    
+    <script src="./configurator.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
